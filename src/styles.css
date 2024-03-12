@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+
+.body{
+    margin: 0;
+    font-family: "karla", sans-serif;
+}
+main{
+    padding:80px;
+}
+.header {
+    display: flex; /* Use flexbox for layout */
+    
+    align-items: center;
+    padding: 20px;
+    height: 70px;
+    background: linear-gradient(90deg,#672280 1.18%,#a626d3 100%);
+}
+
+.header-img {
+    
+    margin-right: 10px;
+    width: 50px;
+    height: auto; /* Maintain the aspect ratio */
+}
+.header-text{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header-title {
+    margin-right: auto;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.form{
+    display: grid;
+    grid-template:40px 40px / 1fr 1fr ;
+    gap: 20px;
+}
+.form-button{
+    grid-column: 1 / -1;
+    font-family: "karla", sans-serif;
+    border-radius: 5px;
+    background: linear-gradient(90deg,#672280 1.18%,#a626d3 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.form-input{
+    font-family: "karla", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #d5d4d8;
+    text-indent: 5px;
+}
+.meme{
+    position: relative;
+}
+.meme-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 80px 330px;
+    max-width: 100%;
+    max-width: 100%;
+}
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 80px;
+}
+
+.top {
+    top: 80px;
+}
